@@ -3,58 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nehith - Team Member</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 20px;
-            background-color: #FF5F1F; /* Bright orange background */
-        }
-        h1, h2 {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: white;
-            font-family: cooper black, sans-serif;
-        
-        }
-        .icon {
-            font-size: 1.5em; /* Adjust size to match the heading */
-            line-height: 1; /* Align with text */
-        }
-        p {
-            font-family: Orator, sans-serif;
-            color: white;
-        }
-        ul {
-            list-style-type: disc;
-            color: white;
-            font-family: Orator, sans-serif;
-        }
-        a {
-            color: #007bff; /* A common blue for links */
-            text-decoration: underline;
-        }
-    </style>
+    <title>Nehith's Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>
-        <span class="icon">💽</span>
-        Nehith - Team Member
-    </h1>
-    <p>Hi there! I'm Nehith,Member of The Glitch Guilds. My role is to help design the site, help squad members, and help ensure smooth collaboration.</p>
+<body class="member-page">
+    <header class="member-header">
+        <h1>Nehith - Frontend Developer</h1>
+    </header>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML5 & Semantic Structure</li>
-        <li>CSS Basics</li>
-        <li>Git & GitHub Collaboration</li>
-        <li>Team Management & Planning</li>
-    </ul>
+    <main>
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/150x150.png?text=Nehith" alt="Nehith's profile picture" class="profile-pic">
+            <p class="bio">Hello! I'm Nehith, a dedicated frontend developer in Glitch Guild. My passion lies in building beautiful and responsive user interfaces that provide a seamless user experience.</p>
+        </div>
+        
+        <div class="member-section">
+            <h2 class="section-heading">Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3 & SASS</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+        
+        <div class="member-section">
+            <h2 class="section-heading">Favorite Tools</h2>
+            <ol>
+                <li>VS Code</li>
+                <li>Chrome DevTools</li>
+                <li>CodePen</li>
+                <li>Git</li>
+            </ol>
+        </div>
 
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:alex@squadtitans.dev">Nehithkrishnan7@gmail.com/a></p>
+        <div class="member-section">
+            <h2 class="section-heading">Contact</h2>
+            <p>Email: <a href="mailto:nehith@squadtitans.dev">nehith@squadtitans.dev</a></p>
+            <h3>Feedback Form</h3>
+            <form>
+                <label for="thoughts">Your thoughts?</label>
+                <textarea id="thoughts" name="thoughts" rows="4"></textarea>
+                
+                <label for="rating">Rate my profile:</label>
+                <select id="rating" name="rating">
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
 
-    <a href="#">&larr; Back to Squad Dashboard</a>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <a href="../../Index/index.html" class="back-link">&larr; Back to Squad Dashboard</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Glitch Guild</p>
+    </footer>
 </body>
 </html>
